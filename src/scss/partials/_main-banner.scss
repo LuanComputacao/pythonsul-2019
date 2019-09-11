@@ -4,8 +4,12 @@ $img-heigth: 250px;
   display: flex;
   flex-flow: column;
 
-  @include breakpoint(md) {
-    padding: 96px 0 0;
+  &__btn-inscricao {
+    margin-bottom: 1em;
+
+    @include breakpoint(sm) {
+      margin-bottom: 0;
+    }
   }
 
   &__logos,

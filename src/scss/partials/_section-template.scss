@@ -28,6 +28,10 @@ $angle-margin-sm: 96px;
   &--angle {
     margin: $angle-margin 0;
 
+    @include breakpoint(sm) {
+      margin: $angle-margin-sm 0;
+    }
+
     &:after,
     &:before {
       background-color: $golden-yellow;
@@ -67,7 +71,7 @@ $angle-margin-sm: 96px;
       bottom: -19px;
       left: 0px;
       transform: skewY(2deg);
-      
+
       @include breakpoint(sm) {
         transform: skewY(4deg);
       }
