@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import Local from './views/Local.vue'
 import KeyNotes from './views/KeyNotes.vue'
 import Schedule from './views/Schedule.vue'
+import Workshops from './views/Workshops.vue'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/schedule/',
       name: 'schedule',
       component: Schedule
+    },
+    {
+      path: '/workshops/',
+      name: 'workshops',
+      component: Workshops
     },
     {
       path: '/about',
